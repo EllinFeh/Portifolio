@@ -18,6 +18,7 @@ const config: Config = {
         primaryblue: '#5CC6FF',
         OneGray: '#212326',
         TwoGray: '#1B1E23',
+        MainWhite: '#EDEDED',
 
       },
     },
