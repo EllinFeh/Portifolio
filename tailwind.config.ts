@@ -19,6 +19,7 @@ const config: Config = {
         OneGray: '#212326',
         TwoGray: '#1B1E23',
         MainWhite: '#EDEDED',
+        Cardcolor: '#16181C',
 
       },
     },
