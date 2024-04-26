@@ -6,19 +6,46 @@ export default function AllPage() {
 
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-  
   return (
     //A main pega todo o conteudo da página, e serve apenas para animação geral de aparição
     <main className='animate__animated animate__fadeIn animate__slow select-none'>
       {/* Nav bar completa */}
-      <div className='max-xl:hidden Navbar animate__animated animate__fadeInDown animate__delay-700ms h-20 bg-OneGray flex justify-center fixed top-0 z-50 w-full'>
-        <nav className='flex items-center '>
+      <div className='Navbar animate__animated animate__fadeInDown animate__delay-700ms h-20 max-sm:h-16 bg-OneGray flex justify-center fixed top-0 z-50 w-full'>
+        <nav className='flex items-center max-xl:hidden '>
           <a href="#about"><Button text="Sobre Mim" /></a>
           <a href="#technologies"><Button text="Tecnologias" /></a>
           <a href="#certification"><Button text="Certificações" /></a>
           <a href="#jobs"><Button text="Projetos" /></a>
           <a href="#skill"><Button text="Experiências" /></a>
           <a href="#contact"><Button text="Redes" /></a>
+        </nav>
+        <nav className='items-center hidden max-xl:flex gap-8 lg:gap-24'>
+          <a href="#technologies"><svg className='hover:scale-110 ease-in duration-100' width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.3175 12.3175L3 21.635L12.3175 30.9525" stroke="#5CC6FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M35.6112 12.3175L44.9287 21.635L35.6112 30.9525" stroke="#5CC6FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28.6231 3L18.9769 39" stroke="#5CC6FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          </a>
+          <a href="#certification"><svg className='hover:scale-110 ease-in duration-100' width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.4375 36.8064C47.5 36.8064 46.875 36.1677 46.875 35.2096V14.4511C46.875 13.493 47.5 12.8543 48.4375 12.8543C49.375 12.8543 50 13.493 50 14.4511V35.2096C50 36.1677 49.375 36.8064 48.4375 36.8064Z" fill="#5CC6FF" />
+            <path d="M25 28.8224C24.6875 28.8224 24.5313 28.8224 24.2188 28.6627L0.78125 15.8882C0.3125 15.5689 0 15.0898 0 14.4511C0 13.8124 0.3125 13.3333 0.78125 13.014L24.2188 0.239521C24.6875 -0.0798403 25.1562 -0.0798403 25.625 0.239521L49.0625 13.014C49.5312 13.3333 49.8437 13.8124 49.8437 14.4511C49.8437 15.0898 49.5312 15.5689 49.0625 15.8882L25.625 28.6627C25.4687 28.8224 25.3125 28.8224 25 28.8224Z" fill="#5CC6FF" />
+            <path d="M27.1875 31.3772C26.5625 31.8563 25.7812 32.016 25 32.016C24.2187 32.016 23.4375 31.8563 22.8125 31.3772L9.375 24.1916V30.4192C9.375 35.3693 17.0312 40 25 40C32.9687 40 40.625 35.3693 40.625 30.4192V24.1916L27.1875 31.3772Z" fill="#5CC6FF" />
+          </svg>
+          </a>
+          <a href="#jobs"><svg className='hover:scale-110 ease-in duration-100' width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.8599 7.1702C38.1857 7.92819 37.0663 8.89302 35.4619 10.3623C33.7629 12.0598 31.3577 12.0598 29.6587 10.3623C27.9584 8.66216 27.9584 6.26009 29.6587 4.56129C31.2244 2.99593 32.9074 1.14229 32.8808 1.13428C28.3301 -0.964869 22.7667 -0.153476 19.0169 3.59377C15.5989 7.00873 14.6248 11.9277 16.0626 16.2127L1.60306 30.6653C-0.534355 32.8004 -0.534355 36.2634 1.60306 38.3986C3.74048 40.5338 7.2051 40.5338 9.34252 38.3986L23.8007 23.9474C28.0915 25.3873 33.0127 24.4105 36.4307 20.9955C40.1752 17.2523 40.9534 11.7141 38.8599 7.1702Z" fill="#5CC6FF" />
+          </svg>
+          </a>
+          <a href="#skill"><svg className='hover:scale-110 ease-in duration-100' width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6145 2H13.3855C10.3491 2.01678 7.44369 3.2391 5.30852 5.39808C3.17335 7.55708 1.98329 10.4759 2.00018 13.5123V27.4877C1.98329 30.5241 3.17335 33.4429 5.30852 35.6018C7.44369 37.7608 10.3491 38.9833 13.3855 39H27.6145C30.6509 38.9833 33.5561 37.7608 35.6913 35.6018C37.8267 33.4429 39.0165 30.5241 38.9998 27.4877V13.5123C39.0165 10.4759 37.8267 7.55708 35.6913 5.39808C33.5561 3.2391 30.6509 2.01678 27.6145 2Z" stroke="#5CC6FF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22.3079 16.6126H31.1508V25.4266" stroke="#5CC6FF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M31.1507 16.6126L20.0508 28.0298C19.0788 29.0013 17.524 29.0655 16.4751 28.1778L14.0966 26.156C13.542 25.6848 12.8178 25.463 12.0945 25.5431C11.3713 25.6229 10.7131 25.9977 10.275 26.5788C10.1719 26.7163 10.0715 26.8563 9.9552 26.9832L3.80798 33.7145" stroke="#5CC6FF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          </a>
+          <a href="#contact"><svg className='hover:scale-110 ease-in duration-100' width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.094 3.29043L16.7165 6.19775C18.1808 8.82145 17.593 12.2633 15.2868 14.5695C15.2868 14.5695 12.4897 17.367 17.5613 22.4388C22.6313 27.5088 25.4305 24.7132 25.4305 24.7132C27.7368 22.407 31.1785 21.8193 33.8023 23.2835L36.7095 24.906C40.6715 27.117 41.1393 32.673 37.657 36.1555C35.5645 38.248 33.001 39.8763 30.1673 39.9835C25.397 40.1645 17.2958 38.9573 9.16925 30.8308C1.04283 22.7043 -0.16447 14.6031 0.0163802 9.83273C0.123805 6.999 1.75201 4.43558 3.84453 2.34308C7.32691 -1.1393 12.8829 -0.671399 15.094 3.29043Z" fill="#5CC6FF" />
+          </svg>
+          </a>
         </nav>
       </div>
       {/* Fundo animado com formas*/}
@@ -54,40 +81,40 @@ export default function AllPage() {
           </div>
 
           <section id='about'></section>
-            {/*Sobre mim e Objetivos*/}
-            <div className="AboutMe flex justify-center items-center bg-gradient-to-r from-TwoGray via-OneGray to-TwoGray">
+          {/*Sobre mim e Objetivos*/}
+          <div className="AboutMe flex justify-center items-center bg-gradient-to-r from-TwoGray via-OneGray to-TwoGray">
+            <div>
               <div>
-                <div>
-                  <p className='text-MainWhite text-3xl font-bold my-40 flex justify-center items-center' >Quem sou?</p>
-                </div>
-                <div> <p className='text-MainWhite text-center mb-16'>Desde cedo, fui fascinado pela maneira como a tecnologia transforma tudo ao nosso redor, e desde então venho explorando e me aprofundando no vasto universo da tecnologia. <br />
-                  Atualmente, estou em uma jornada de aprendizado contínuo, completando diversos cursos para aprimorar minhas habilidades e conhecimentos. <br />
-                  Uma das minhas paixões fora do mundo da tecnologia são os carros, e minha trilogia favorita é Velozes e Furiosos, sou fascinado pela mecânica automotiva e pela emoção da velocidade.</p>
-                </div>
-
-                {/*Conteudo da Lista de habilidades pessoais*/}
-                <div className='flex justify-center items-center'>
-                  <ul className='max-md:flex-col max-md:items-center text-primaryblue flex justify-center p-4 list-disc font-semibold border-2 border-solid rounded-3xl border-primaryblue'>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Confiante</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Detalhista</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Calmo</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Esforçado</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Liderante</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Criativo</li>
-                    <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Determinado</li>
-                  </ul>
-                </div>
-
-                {/*Objetivos*/}
-
-                <p className='text-MainWhite text-3xl font-bold my-24 flex justify-center items-center' >Objetivos</p>
-                <div className='flex justify-center items-center'>
-                  <div className='border-2 border-solid rounded-3xl border-primaryblue mb-40 max-w-3xl'> <p className='text-MainWhite text-center p-4 '>Busco aprimorar minhas habilidades em qualidade de software, obtendo certificações relevantes, aplicando experiência prática e desenvolvendo no mercado de trabalho, enquanto construo uma base profissional sólida e busco oportunidades em grandes empresas, com o objetivo de me tornar um líder respeitado na indústria de tecnologia.</p>
-                  </div>
-                </div>
-
+                <p className='text-MainWhite text-3xl font-bold my-40 flex justify-center items-center' >Quem sou?</p>
               </div>
+              <div> <p className='text-MainWhite text-center mb-16'>Desde cedo, fui fascinado pela maneira como a tecnologia transforma tudo ao nosso redor, e desde então venho explorando e me aprofundando no vasto universo da tecnologia. <br />
+                Atualmente, estou em uma jornada de aprendizado contínuo, completando diversos cursos para aprimorar minhas habilidades e conhecimentos. <br />
+                Uma das minhas paixões fora do mundo da tecnologia são os carros, e minha trilogia favorita é Velozes e Furiosos, sou fascinado pela mecânica automotiva e pela emoção da velocidade.</p>
+              </div>
+
+              {/*Conteudo da Lista de habilidades pessoais*/}
+              <div className='flex justify-center items-center'>
+                <ul className='max-md:flex-col max-md:items-center text-primaryblue flex justify-center p-4 list-disc font-semibold border-2 border-solid rounded-3xl border-primaryblue'>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Confiante</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Detalhista</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Calmo</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Esforçado</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Liderante</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Criativo</li>
+                  <li className='mx-6 my-2 animate__animated animate__flipInX animate__delay-2s'>Determinado</li>
+                </ul>
+              </div>
+
+              {/*Objetivos*/}
+
+              <p className='text-MainWhite text-3xl font-bold my-24 flex justify-center items-center' >Objetivos</p>
+              <div className='flex justify-center items-center'>
+                <div className='border-2 border-solid rounded-3xl border-primaryblue mb-40 max-w-3xl'> <p className='text-MainWhite text-center p-4 '>Busco aprimorar minhas habilidades em qualidade de software, obtendo certificações relevantes, aplicando experiência prática e desenvolvendo no mercado de trabalho, enquanto construo uma base profissional sólida e busco oportunidades em grandes empresas, com o objetivo de me tornar um líder respeitado na indústria de tecnologia.</p>
+                </div>
+              </div>
+
             </div>
+          </div>
 
           <section id='technologies'></section>
           {/*Tecnologias*/}
@@ -591,7 +618,11 @@ export default function AllPage() {
       {/*Footer*/}
       <div className='flex justify-center items-center'>
         <div className='bg-primaryblue w-full flex flex-col items-center justify-center'>
-          <p className='text-OneGray text-sm w-full text-center py-16 '> Desenvolvido por <span className='font-extrabold'>Elison Felipe Santos.</span></p>
+          <svg className='m-4' width="54" height="53" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.8631 0C12.0262 0 0 12.0262 0 26.8631C0 29.835 0.48375 32.6944 1.37437 35.3662C6.07125 32.535 10.2675 30.5494 13.9575 29.28C9.77437 29.9362 6.1875 32.0456 1.10625 29.745C4.79812 26.4975 11.3644 22.0425 17.3137 21.3619C20.4244 18.8325 25.2844 16.2187 27.8044 17.0006C31.3725 13.8562 35.7581 9.85312 40.4531 6.96937C41.7019 8.85937 42.4556 11.175 41.9212 13.7419C32.5181 16.1062 34.7062 31.1662 43.5 21.6319C44.2425 23.16 44.6006 24.75 44.5631 26.4769C40.74 30.435 36.7275 33.8531 32.6362 36.765C32.6906 39.5719 31.9781 42.9562 30.4106 46.6875C29.7506 48.2569 29.5537 50.9456 33.0862 53.0006C44.9194 50.1919 53.7244 39.5569 53.7244 26.8631C53.7244 12.0262 41.6962 0 26.8612 0H26.8631Z" fill="#1B1E23" />
+          </svg>
+
+          <p className='text-OneGray text-sm w-full text-center pb-8 '> Desenvolvido por <span className='font-extrabold'>Elison Felipe Santos.</span></p>
           <p className='text-OneGray text-xs font-bold max-md:mx-8 text-center max-w-screen-xl'>
             © 2024 O conteúdo deste site, incluindo textos, imagens, vídeos e gráficos, é protegido por leis de direitos autorais e propriedade intelectual. É proibida a reprodução, distribuição ou utilização não autorizada do conteúdo sem permissão prévia por escrito.
             O objetivo deste site é servir como um portfólio pessoal, oferecendo uma plataforma para exibir e destacar o trabalho criativo e as realizações do tal. Com uma variedade de projetos, designs ou qualquer outra forma de expressão criativa, este site é projetado para oferecer aos visitantes uma visão abrangente do talento e da experiência do tal.

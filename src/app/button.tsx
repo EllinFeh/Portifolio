@@ -15,7 +15,10 @@ const Button: React.FC<ButtonProps> = ({ text }) => {
         border-primaryblue 
           rounded-2xl w-48 
           font-semibold 
-          mx-2">{(text)}</button>
+          mx-2">{(text)}  
+          
+          
+          </button>
   )
 
 };
