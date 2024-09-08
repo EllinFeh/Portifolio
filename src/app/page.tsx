@@ -75,8 +75,8 @@ export default function AllPage() {
 
           <div className='Content-TWO flex justify-center items-center animate__animated animate__flipInX'>
             <div className='my-48 text-center p-6 px-12 border-2 border-solid	border-MainWhite rounded-tl-full rounded-tr-lg rounded-br-full rounded-bl-lg '>
-              <p className='text-MainWhite text-lg font-bold'>Desenvolvedor Web <span className='font-thin'>|</span> Técnico em redes <span className='font-thin'>|</span> UI UX </p>
-              <p className='text-MainWhite text-md max-sm:text-xs font-extralight'>Graduando Tecnologia em Sistemas para internet</p>
+              <p className='text-MainWhite text-lg font-bold'>Developer Front-end <span className='font-thin'>|</span> Network Technician <span className='font-thin'>|</span> UI UX </p>
+              <p className='text-MainWhite text-md max-sm:text-xs font-extralight'>Graduando Sistemas para internet</p>
             </div>
           </div>
 
@@ -257,7 +257,7 @@ export default function AllPage() {
                       <Image className='m-4 my-12' src="/images/ETE.png" alt="Photo" width={178} height={140} />
                     </div>
                     <div >
-                      <p className='text-MainWhite text-xl font-bold pt-6 pb-2 text-center'>ETE - PIMR.</p>
+                      <p className='text-MainWhite text-xl font-bold pt-6 pb-2 text-center'>ETE - PIMR</p>
                       <p className='text-MainWhite text-md font-extralight text-center mb-3'>Técnico em Redes de computadores</p>
 
                       <div className='flex justify-center items-center gap-2'>
@@ -462,6 +462,27 @@ export default function AllPage() {
               </div>
             </div>
 
+            <div className='Card bg-primaryblue h-80 w-72 rounded-3xl flex flex-col items-center hover:scale-105 ease-in duration-300'>
+              <div >
+                <p className='text-TwoGray text-xl font-black pt-6 pb-2 text-center'>Sol e Art</p>
+                <p className='text-TwoGray text-md font-semibold text-center pb-12'>E-commerce + consumo de API</p>
+
+                <div className='flex justify-center'>
+                  <svg className='m-[2px]' height="73" width="120" fill="none" viewBox="0 0 181 73" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M181 3H114V71H181V3ZM141.143 61.9333H135.545V39.4679H127.518V34.7832H149.171V39.4679H141.143V61.9333ZM173.359 53.8427C173.359 59.2238 169.243 62.6297 162.57 62.6297C156.174 62.6297 152.132 59.5252 151.817 54.7081L151.799 54.4071H157.194L157.212 54.5952C157.416 56.6275 159.585 58.0011 162.718 58.0011C165.703 58.0011 167.76 56.5523 167.76 54.4638V54.4447C167.76 52.6577 166.444 51.6603 163.126 50.964L160.308 50.381C154.746 49.2332 152.355 46.5989 152.355 42.4785V42.4595C152.355 37.4171 156.619 34.0869 162.551 34.0869C168.798 34.0869 172.469 37.4361 172.821 41.9703L172.84 42.2151H167.575L167.538 41.9894C167.223 40.0514 165.369 38.6968 162.551 38.6968C159.789 38.7154 157.953 39.9947 157.953 42.027V42.0456C157.953 43.8145 159.251 44.8681 162.403 45.5267L165.239 46.1097C170.893 47.2952 173.359 49.5904 173.359 53.8241V53.8427Z" fill="#1B1E23" fillRule="evenodd" />
+                    <path d="M24.4907 8.07441C23.2235 8.80601 21.8901 10.8235 21.7353 15.2243C21.6618 17.3147 19.9076 18.9498 17.8173 18.8762C15.7269 18.8027 14.0919 17.0486 14.1653 14.9582C14.3551 9.56297 16.0612 4.19473 20.7034 1.51458C25.3588 -1.17319 30.8784 0.0473515 35.6577 2.59704C37.5032 3.58159 38.2011 5.87579 37.2165 7.72123C36.232 9.56671 33.9378 10.2646 32.0924 9.28013C28.1867 7.19651 25.7617 7.34058 24.4907 8.07441ZM44.7983 14.6436C46.409 13.3091 48.7965 13.5331 50.1309 15.1438C52.9305 18.5227 55.6159 22.3758 58.0534 26.5981C63.3067 35.6963 66.5456 45.0179 67.4187 52.8367C67.8545 56.7396 67.7212 60.4537 66.8097 63.6391C65.8912 66.8487 64.102 69.7538 61.1015 71.4859C57.4712 73.5821 53.2794 73.2846 49.4428 71.8879C45.5926 70.486 41.6299 67.8314 37.8522 64.3834C36.3073 62.973 36.1982 60.5774 37.6083 59.0327C39.0185 57.488 41.414 57.3784 42.9588 58.7888C46.2872 61.8267 49.4152 63.8163 52.0341 64.7702C54.6671 65.7287 56.3234 65.4984 57.3142 64.9263C58.1443 64.4471 58.9796 63.4704 59.5275 61.5551C60.0824 59.616 60.2577 56.9608 59.891 53.6769C59.1588 47.1219 56.3507 38.7977 51.4938 30.3854C49.2599 26.5162 46.8153 23.0146 44.298 19.9762C42.9636 18.3655 43.1876 15.978 44.7983 14.6436Z" fill="#1B1E23" />
+                    <path d="M73.2214 37.5325C73.2214 36.0693 72.1407 33.9057 68.407 31.5713C66.6335 30.4625 66.0947 28.1258 67.2036 26.3522C68.3125 24.5786 70.649 24.0398 72.4225 25.1486C77.0001 28.0105 80.796 32.1722 80.796 37.5325C80.796 42.9081 76.9794 47.0777 72.3816 49.9419C70.6061 51.0478 68.2701 50.5055 67.1642 48.73C66.0583 46.9545 66.6012 44.6188 68.3762 43.5128C72.1337 41.1723 73.2214 39.0001 73.2214 37.5325ZM57.3783 51.8346C57.7288 53.8969 56.3411 55.8527 54.2788 56.2031C49.9531 56.9378 45.2734 57.3368 40.398 57.3368C29.8922 57.3368 20.1999 55.4815 12.9923 52.3279C9.39415 50.7539 6.24447 48.7815 3.94148 46.3995C1.62085 43.9992 0 40.9971 0 37.5325C0 33.3408 2.3536 29.859 5.4814 27.235C8.62053 24.6015 12.9006 22.4969 17.7758 20.9495C19.7695 20.3167 21.8986 21.4199 22.5314 23.4135C23.1642 25.4072 22.061 27.5363 20.0674 28.1692C15.7721 29.5325 12.485 31.2466 10.3497 33.038C8.20292 34.839 7.57463 36.3883 7.57463 37.5325C7.57463 38.4909 8.00264 39.7025 9.38724 41.1347C10.7895 42.5851 13.0013 44.0643 16.0284 45.3886C22.0713 48.0321 30.6843 49.7622 40.398 49.7622C44.8658 49.7622 49.1205 49.396 53.0103 48.735C55.0726 48.3851 57.0284 49.7728 57.3783 51.8346Z" fill="#1B1E23" />
+                    <path d="M24.602 64.9259C25.8692 65.6576 28.2832 65.8035 32.1717 63.7372C34.0188 62.7555 36.3119 63.4574 37.2934 65.3041C38.2749 67.1513 37.5733 69.4444 35.7262 70.4261C30.959 72.959 25.4569 74.1659 20.8147 71.4855C16.1594 68.798 14.4565 63.4074 14.275 57.9936C14.2049 55.903 15.8427 54.1517 17.9332 54.0816C20.0237 54.0114 21.7753 55.649 21.8454 57.7396C21.9937 62.1642 23.331 64.1922 24.602 64.9259ZM20.1373 44.0544C18.1763 43.3266 17.1765 41.147 17.9042 39.186C19.4307 35.0722 21.4248 30.8199 23.8625 26.5977C29.1154 17.4994 35.5685 10.0334 41.9031 5.36808C45.0655 3.03903 48.3484 1.29747 51.563 0.494114C54.8019 -0.315417 58.2125 -0.218093 61.2126 1.51421C64.8428 3.61006 66.6815 7.38924 67.3899 11.41C68.1009 15.4453 67.7838 20.2042 66.686 25.2C66.2371 27.2429 64.2172 28.5353 62.1746 28.0865C60.1314 27.6377 58.8392 25.6177 59.2881 23.5748C60.2546 19.1732 60.4137 15.4695 59.9304 12.7245C59.4442 9.96492 58.416 8.64612 57.4253 8.07404C56.5956 7.59482 55.3321 7.3597 53.3996 7.84271C51.4423 8.33188 49.0554 9.50781 46.3949 11.4671C41.084 15.3786 35.2792 21.9726 30.4223 30.385C28.1884 34.2542 26.3783 38.1221 25.0056 41.8213C24.2779 43.7822 22.0983 44.782 20.1373 44.0544Z" fill="#1B1E23" />
+                    <path d="M47.7669 36.8288C47.7669 40.62 44.6935 43.6934 40.9023 43.6934C37.1112 43.6934 34.0378 40.62 34.0378 36.8288C34.0378 33.0377 37.1112 29.9644 40.9023 29.9644C44.6935 29.9644 47.7669 33.0377 47.7669 36.8288Z" fill="#1B1E23" />
+                  </svg>
+                </div>
+
+                <div className='flex justify-center mt-16' >
+                  <a href="https://github.com/Alefthiago/Sol-e-Art" target='_blank' className=' bg-TwoGray text-MainWhite p-3 rounded-t-3xl font-semibold'>Acessar Repositório</a>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <section id='skill'></section>
@@ -473,6 +494,23 @@ export default function AllPage() {
 
               <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
                 <div className='flex flex-col justify-center items-center'>
+                <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.3581 67L26.2838 52.4629" stroke="#5CC6FF" stroke-width="4.775" stroke-miterlimit="10" />
+                    <path d="M14.6419 67H55.3581" stroke="#5CC6FF" stroke-width="4.775" stroke-miterlimit="10" />
+                    <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#5CC6FF" stroke-width="4.775" stroke-miterlimit="10" />
+                    <path d="M46.4286 67L43.5333 52.4629" stroke="#5CC6FF" stroke-width="4.775" stroke-miterlimit="10" />
+                  </svg>
+                  <div>
+                    <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
+                    <p className='text-MainWhite text-sm pt-2 font-light text-center' >Auxiliar de T.I</p>
+                    <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
+                    <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Suporte ao usuário, Administração de sistemas, Atendimento à chamados, Configuração de máquinas etc...</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
+                <div className='flex flex-col justify-center items-center'>
                   <svg className='mt-4' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 35H67M35 20.7778V35M15.4444 35V49.2222M54.5556 35V49.2222M28.2444 20.7778H41.7556C43.747 20.7778 44.7426 20.7778 45.5031 20.3903C46.1723 20.0494 46.7159 19.5054 47.0569 18.8364C47.4444 18.0758 47.4444 17.0802 47.4444 15.0889V8.68889C47.4444 6.6976 47.4444 5.70194 47.0569 4.94137C46.7159 4.27236 46.1723 3.72843 45.5031 3.38752C44.7426 3 43.747 3 41.7556 3H28.2444C26.2532 3 25.2575 3 24.4969 3.38752C23.8279 3.72843 23.284 4.27236 22.9431 4.94137C22.5556 5.70194 22.5556 6.6976 22.5556 8.68889V15.0889C22.5556 17.0802 22.5556 18.0758 22.9431 18.8364C23.284 19.5054 23.8279 20.0494 24.4969 20.3903C25.2575 20.7778 26.2532 20.7778 28.2444 20.7778ZM47.8 67H61.3111C63.3026 67 64.2981 67 65.0587 66.6124C65.7278 66.2715 66.2715 65.7278 66.6124 65.0587C67 64.2981 67 63.3026 67 61.3111V54.9111C67 52.9196 67 51.9241 66.6124 51.1636C66.2715 50.4944 65.7278 49.9508 65.0587 49.6098C64.2981 49.2222 63.3026 49.2222 61.3111 49.2222H47.8C45.8085 49.2222 44.813 49.2222 44.0524 49.6098C43.3833 49.9508 42.8396 50.4944 42.4987 51.1636C42.1111 51.9241 42.1111 52.9196 42.1111 54.9111V61.3111C42.1111 63.3026 42.1111 64.2981 42.4987 65.0587C42.8396 65.7278 43.3833 66.2715 44.0524 66.6124C44.813 67 45.8085 67 47.8 67ZM8.68889 67H22.2C24.1913 67 25.187 67 25.9475 66.6124C26.6165 66.2715 27.1605 65.7278 27.5014 65.0587C27.8889 64.2981 27.8889 63.3026 27.8889 61.3111V54.9111C27.8889 52.9196 27.8889 51.9241 27.5014 51.1636C27.1605 50.4944 26.6165 49.9508 25.9475 49.6098C25.187 49.2222 24.1913 49.2222 22.2 49.2222H8.68889C6.6976 49.2222 5.70194 49.2222 4.94137 49.6098C4.27236 49.9508 3.72843 50.4944 3.38752 51.1636C3 51.9241 3 52.9196 3 54.9111V61.3111C3 63.3026 3 64.2981 3.38752 65.0587C3.72843 65.7278 4.27236 66.2715 4.94137 66.6124C5.70194 67 6.6976 67 8.68889 67Z" stroke="#5CC6FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
@@ -481,7 +519,6 @@ export default function AllPage() {
                     <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Técnico de redes</p>
                     <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
                     <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Crimpagem de cabos, instalação em domicílio, administração em sistema mikrotik, configuração de rede para cliente final, switchs, roteadores etc...</p>
-                    <p className='text-MainWhite text-md pt-8 font-extrabold text-center' >2 Anos</p>
                   </div>
                 </div>
               </div>
@@ -500,7 +537,6 @@ export default function AllPage() {
                     <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Suporte T.I</p>
                     <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
                     <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Manutenção de hardwares e softwares, servidores automação, instalação de impressoras (térmicas, adesivas, comum) etc...</p>
-                    <p className='text-MainWhite text-md pt-8 font-extrabold text-center' >2 Anos</p>
                   </div>
                 </div>
               </div>
@@ -518,7 +554,6 @@ export default function AllPage() {
                     <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Demoweek</p>
                     <p className='text-MainWhite text-sm pt-2 font-bold text-center' >Campeão - 1º Lugar </p>
                     <p className='text-MainWhite text-md pt-8 font-extralight mx-4 text-center' >Capitão do campeonato carro seguidor de linha usando c++ e hardware com arduino. <br /> <br /> <span className='font-normal text-xs'>Docentes: David Cavalcanti & Ramon Mota.</span></p>
-                    <p className='text-MainWhite text-md pt-8 font-extrabold text-center' >2023</p>
                   </div>
                 </div>
               </div>
