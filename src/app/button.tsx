@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ text }) => {
         text-primaryblue
           p-2 border-2
         border-primaryblue 
-          rounded-2xl w-48 
+          rounded-2xl w-32 
           font-semibold 
           mx-2">{(text)}  
           

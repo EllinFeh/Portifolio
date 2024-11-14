@@ -15,12 +15,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primaryblue: '#5CC6FF',
-        OneGray: '#212326',
+        primaryblue: '#A35DDA',
+        OneGray: '#291F31',
         TwoGray: '#1B1E23',
         MainWhite: '#EDEDED',
         Cardcolor: '#16181C',
-
       },
     },
   },
