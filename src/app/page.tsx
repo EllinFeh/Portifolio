@@ -578,74 +578,99 @@ export default function AllPage() {
           <div className="AboutMe bg-gradient-to-r from-TwoGray via-OneGray to-TwoGray mt-40 pb-40 animate__animated animate__wobble">
 
             <p className='text-MainWhite text-3xl font-bold py-40 text-center' >Experiências e Conquistas</p>
-            <div className='flex justify-center gap-8 max-lg:flex-col items-center'>
+            <div className='flex flex-col justify-center gap-8 items-center'>
+              <div className='flex max-lg:flex-col gap-8'>
 
               <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
-                <div className='flex flex-col justify-center items-center'>
-                  <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                  </svg>
-                  <div>
-                    <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
-                    <p className='text-MainWhite text-sm pt-2 font-light text-center' >Auxiliar de T.I</p>
-                    <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
-                    <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Suporte ao usuário, Administração de sistemas, Atendimento à chamados, Configuração de máquinas etc...</p>
+                  <div className='flex flex-col justify-center items-center'>
+                    <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                    </svg>
+                    <div>
+                      <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
+                      <p className='text-MainWhite text-sm pt-2 font-light text-center' >Estagiário em Desenvolvimento</p>
+                      <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
+                      <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Desenvolvimento e Manutenção de robôs RPA</p>
+                      <p className='text-MainWhite text-md pt-2 mx-4 text-center mt-6' >Contrato Ativo</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
+                  <div className='flex flex-col justify-center items-center'>
+                    <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                    </svg>
+                    <div>
+                      <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
+                      <p className='text-MainWhite text-sm pt-2 font-light text-center' >Auxiliar de T.I</p>
+                      <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
+                      <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Suporte ao usuário, Administração de sistemas, Atendimento à chamados, Configuração de máquinas etc...</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex'>
+                  <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
+                    <div className='flex flex-col justify-center items-center'>
+                      <svg className='mt-4' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 35H67M35 20.7778V35M15.4444 35V49.2222M54.5556 35V49.2222M28.2444 20.7778H41.7556C43.747 20.7778 44.7426 20.7778 45.5031 20.3903C46.1723 20.0494 46.7159 19.5054 47.0569 18.8364C47.4444 18.0758 47.4444 17.0802 47.4444 15.0889V8.68889C47.4444 6.6976 47.4444 5.70194 47.0569 4.94137C46.7159 4.27236 46.1723 3.72843 45.5031 3.38752C44.7426 3 43.747 3 41.7556 3H28.2444C26.2532 3 25.2575 3 24.4969 3.38752C23.8279 3.72843 23.284 4.27236 22.9431 4.94137C22.5556 5.70194 22.5556 6.6976 22.5556 8.68889V15.0889C22.5556 17.0802 22.5556 18.0758 22.9431 18.8364C23.284 19.5054 23.8279 20.0494 24.4969 20.3903C25.2575 20.7778 26.2532 20.7778 28.2444 20.7778ZM47.8 67H61.3111C63.3026 67 64.2981 67 65.0587 66.6124C65.7278 66.2715 66.2715 65.7278 66.6124 65.0587C67 64.2981 67 63.3026 67 61.3111V54.9111C67 52.9196 67 51.9241 66.6124 51.1636C66.2715 50.4944 65.7278 49.9508 65.0587 49.6098C64.2981 49.2222 63.3026 49.2222 61.3111 49.2222H47.8C45.8085 49.2222 44.813 49.2222 44.0524 49.6098C43.3833 49.9508 42.8396 50.4944 42.4987 51.1636C42.1111 51.9241 42.1111 52.9196 42.1111 54.9111V61.3111C42.1111 63.3026 42.1111 64.2981 42.4987 65.0587C42.8396 65.7278 43.3833 66.2715 44.0524 66.6124C44.813 67 45.8085 67 47.8 67ZM8.68889 67H22.2C24.1913 67 25.187 67 25.9475 66.6124C26.6165 66.2715 27.1605 65.7278 27.5014 65.0587C27.8889 64.2981 27.8889 63.3026 27.8889 61.3111V54.9111C27.8889 52.9196 27.8889 51.9241 27.5014 51.1636C27.1605 50.4944 26.6165 49.9508 25.9475 49.6098C25.187 49.2222 24.1913 49.2222 22.2 49.2222H8.68889C6.6976 49.2222 5.70194 49.2222 4.94137 49.6098C4.27236 49.9508 3.72843 50.4944 3.38752 51.1636C3 51.9241 3 52.9196 3 54.9111V61.3111C3 63.3026 3 64.2981 3.38752 65.0587C3.72843 65.7278 4.27236 66.2715 4.94137 66.6124C5.70194 67 6.6976 67 8.68889 67Z" stroke="#A35DDA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div>
+                        <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Edilson Net</p>
+                        <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Técnico de redes</p>
+                        <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
+                        <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Crimpagem de cabos, instalação em domicílio, administração em sistema mikrotik, configuração de rede para cliente final, switchs, roteadores etc...</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
-                <div className='flex flex-col justify-center items-center'>
-                  <svg className='mt-4' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 35H67M35 20.7778V35M15.4444 35V49.2222M54.5556 35V49.2222M28.2444 20.7778H41.7556C43.747 20.7778 44.7426 20.7778 45.5031 20.3903C46.1723 20.0494 46.7159 19.5054 47.0569 18.8364C47.4444 18.0758 47.4444 17.0802 47.4444 15.0889V8.68889C47.4444 6.6976 47.4444 5.70194 47.0569 4.94137C46.7159 4.27236 46.1723 3.72843 45.5031 3.38752C44.7426 3 43.747 3 41.7556 3H28.2444C26.2532 3 25.2575 3 24.4969 3.38752C23.8279 3.72843 23.284 4.27236 22.9431 4.94137C22.5556 5.70194 22.5556 6.6976 22.5556 8.68889V15.0889C22.5556 17.0802 22.5556 18.0758 22.9431 18.8364C23.284 19.5054 23.8279 20.0494 24.4969 20.3903C25.2575 20.7778 26.2532 20.7778 28.2444 20.7778ZM47.8 67H61.3111C63.3026 67 64.2981 67 65.0587 66.6124C65.7278 66.2715 66.2715 65.7278 66.6124 65.0587C67 64.2981 67 63.3026 67 61.3111V54.9111C67 52.9196 67 51.9241 66.6124 51.1636C66.2715 50.4944 65.7278 49.9508 65.0587 49.6098C64.2981 49.2222 63.3026 49.2222 61.3111 49.2222H47.8C45.8085 49.2222 44.813 49.2222 44.0524 49.6098C43.3833 49.9508 42.8396 50.4944 42.4987 51.1636C42.1111 51.9241 42.1111 52.9196 42.1111 54.9111V61.3111C42.1111 63.3026 42.1111 64.2981 42.4987 65.0587C42.8396 65.7278 43.3833 66.2715 44.0524 66.6124C44.813 67 45.8085 67 47.8 67ZM8.68889 67H22.2C24.1913 67 25.187 67 25.9475 66.6124C26.6165 66.2715 27.1605 65.7278 27.5014 65.0587C27.8889 64.2981 27.8889 63.3026 27.8889 61.3111V54.9111C27.8889 52.9196 27.8889 51.9241 27.5014 51.1636C27.1605 50.4944 26.6165 49.9508 25.9475 49.6098C25.187 49.2222 24.1913 49.2222 22.2 49.2222H8.68889C6.6976 49.2222 5.70194 49.2222 4.94137 49.6098C4.27236 49.9508 3.72843 50.4944 3.38752 51.1636C3 51.9241 3 52.9196 3 54.9111V61.3111C3 63.3026 3 64.2981 3.38752 65.0587C3.72843 65.7278 4.27236 66.2715 4.94137 66.6124C5.70194 67 6.6976 67 8.68889 67Z" stroke="#A35DDA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div>
-                    <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Edilson Net</p>
-                    <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Técnico de redes</p>
-                    <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
-                    <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Crimpagem de cabos, instalação em domicílio, administração em sistema mikrotik, configuração de rede para cliente final, switchs, roteadores etc...</p>
+              <div className='flex max-lg:flex-col gap-8'>
+
+                <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
+                  <div className='flex flex-col justify-center items-center lg:flex-col'>
+                    <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                    </svg>
+
+                    <div>
+                      <p className='text-MainWhite text-xl pt-4 font-bold text-center' >EJSS Mercearia</p>
+                      <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Suporte T.I</p>
+                      <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
+                      <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Manutenção de hardwares e softwares, servidores automação, instalação de impressoras (térmicas, adesivas, comum) etc...</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
+                  <div className='flex flex-col justify-center items-center'>
+                    <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                      <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
+                    </svg>
+
+                    <div>
+                      <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Demoweek</p>
+                      <p className='text-MainWhite text-sm pt-2 font-bold text-center' >Campeão - 1º Lugar </p>
+                      <p className='text-MainWhite text-md pt-8 font-extralight mx-4 text-center' >Capitão do campeonato carro seguidor de linha usando c++ e hardware com arduino. <br /> <br /> <span className='font-normal text-xs'>Docentes: David Cavalcanti & Ramon Mota.</span></p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
-                <div className='flex flex-col justify-center items-center lg:flex-col'>
-                  <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                  </svg>
-
-                  <div>
-                    <p className='text-MainWhite text-xl pt-4 font-bold text-center' >EJSS Mercearia</p>
-                    <p className='text-MainWhite text-sm pt-2 font-light text-center' >Voluntário: Suporte T.I</p>
-                    <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
-                    <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Manutenção de hardwares e softwares, servidores automação, instalação de impressoras (térmicas, adesivas, comum) etc...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className='h-96 w-80 border-2 border-solid rounded-3xl border-primaryblue hover:scale-105 transition ease-in-out delay-100'>
-                <div className='flex flex-col justify-center items-center'>
-                  <svg className='mt-4 ' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.3581 67L26.2838 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M14.6419 67H55.3581" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M61.1791 3H8.82095C5.60613 3 3 5.60612 3 8.82093V46.6417C3 49.8566 5.60613 52.4627 8.82095 52.4627H61.1791C64.3939 52.4627 67 49.8566 67 46.6417V8.82093C67 5.60612 64.3939 3 61.1791 3Z" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                    <path d="M46.4286 67L43.5333 52.4629" stroke="#A35DDA" stroke-width="4.775" stroke-miterlimit="10" />
-                  </svg>
-
-                  <div>
-                    <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Demoweek</p>
-                    <p className='text-MainWhite text-sm pt-2 font-bold text-center' >Campeão - 1º Lugar </p>
-                    <p className='text-MainWhite text-md pt-8 font-extralight mx-4 text-center' >Capitão do campeonato carro seguidor de linha usando c++ e hardware com arduino. <br /> <br /> <span className='font-normal text-xs'>Docentes: David Cavalcanti & Ramon Mota.</span></p>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
           </div>
