@@ -610,7 +610,7 @@ export default function AllPage() {
                     </svg>
                     <div>
                       <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
-                      <p className='text-MainWhite text-sm pt-2 font-light text-center' >Auxiliar de T.I</p>
+                      <p className='text-MainWhite text-sm pt-2 font-light text-center' >Jovem Aprendiz</p>
                       <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
                       <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Suporte ao usuário, Administração de sistemas, Atendimento à chamados, Configuração de máquinas etc...</p>
                     </div>
