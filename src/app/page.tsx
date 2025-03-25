@@ -163,7 +163,7 @@ export default function AllPage() {
 
           <div className='Content-TWO flex justify-center items-center animate__animated animate__flipInX'>
             <div className='my-48 text-center p-6 px-12 border-2 border-solid	border-MainWhite rounded-tl-full rounded-tr-lg rounded-br-full rounded-bl-lg '>
-              <p className='text-MainWhite text-lg font-bold'>Desenvolvedor RPA <span className='font-thin'>|</span> Network Technician <span className='font-thin'>|</span> UI UX </p>
+              <p className='text-MainWhite text-lg font-bold'>Fullstack Developer <span className='font-thin'>|</span> Machine Learning <span className='font-thin'>|</span> UI UX </p>
               <p className='text-MainWhite text-md max-sm:text-xs font-extralight'>Graduando Sistemas para internet</p>
             </div>
           </div>
@@ -593,7 +593,7 @@ export default function AllPage() {
                       <p className='text-MainWhite text-xl pt-4 font-bold text-center' >Queiroz Cavalcanti Advocacia</p>
                       <p className='text-MainWhite text-sm pt-2 font-light text-center' >Estagiário em Desenvolvimento</p>
                       <p className='text-MainWhite text-md pt-5 font-bold text-center' >Serviços</p>
-                      <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Desenvolvimento e Manutenção de robôs RPA</p>
+                      <p className='text-MainWhite text-md pt-2 font-extralight mx-4 text-center' >Desenvolvimento de páginas Web e Machine Learning</p>
                       <p className='text-MainWhite text-md pt-2 mx-4 text-center mt-6' >Contrato Ativo</p>
 
                     </div>
