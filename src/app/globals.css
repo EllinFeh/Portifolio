@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Adicione isso ao seu arquivo CSS global */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Suporte para Safari */
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.group:hover .group-hover\:rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
 :root {
   --foreground-rgb: 27, 30, 35;
   --background-start-rgb: 27, 30, 35;
@@ -10,8 +28,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 27, 30, 35;
-    --background-start-rgb: 27, 30, 35;
+    --foreground-rgb: 60, 30, 35;
+    --background-start-rgb: 27, 0, 35;
     --background-end-rgb: 27, 30, 35;
   }
 }
@@ -26,3 +44,121 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Estilos básicos para o body e o container de conteúdo */
+body {
+  margin: 0;
+  /* Remova 'overflow: hidden;' do body se estiver aqui */
+  /* Você pode querer uma cor de fallback para o body enquanto o fundo animado carrega */
+  background-color: #030010; /* Fallback simples */
+}
+
+.page-content {
+  position: relative; /* Garante que o conteúdo fique acima do fundo */
+  z-index: 3; /* Acima das nebulosas e do fundo */
+  /* Adicione padding ou outros estilos conforme necessário para seu layout */
+}
+
+/* FUNDO ANIMADO */
+.animated-universe-background {
+  position: fixed; /* Fixa o fundo na tela */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Coloca o fundo atrás de todo o resto */
+  overflow: hidden; /* ESSENCIAL AQUI: evita que os pseudo-elementos causem scroll */
+  background-color: #030010; /* Cor base bem escura */
+
+  /* CAMADA DE ESTRELAS (MODIFICADA) */
+  background-image:
+    /* Estrelas pequenas - opacidade reduzida em 50%, tamanho do pattern aumentado */
+    radial-gradient(circle 1px, rgba(255, 255, 255, 0.4) 1px, transparent 1.5px), /* Era 0.8 */
+    radial-gradient(circle 1px, rgba(220, 220, 255, 0.35) 1px, transparent 1.5px), /* Era 0.7 */
+    /* Estrelas médias - opacidade reduzida em 50%, tamanho do pattern aumentado */
+    radial-gradient(circle 1.5px, rgba(255, 255, 255, 0.3) 1.5px, transparent 2px), /* Era 0.6 */
+    radial-gradient(circle 1.5px, rgba(200, 200, 255, 0.25) 1.5px, transparent 2px); /* Era 0.5 */
+  background-repeat: repeat;
+  /* Tamanhos aumentados para diminuir a quantidade de estrelas */
+  background-size:
+    140px 140px,  /* Era 70px */
+    180px 180px,  /* Era 90px */
+    340px 340px,  /* Era 170px */
+    460px 460px;  /* Era 230px */
+  background-position: 0 0, 70px 70px, 0 0, 170px 170px; /* Ajuste os offsets se necessário */
+  animation: moveStars 240s linear infinite;
+}
+
+/* CAMADAS DE NEBULOSA (agora pertencem a .animated-universe-background) */
+.animated-universe-background::before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  z-index: 1; /* Acima das estrelas no .animated-universe-background, mas abaixo do .page-content */
+  background-image:
+    radial-gradient(ellipse at 30% 40%, rgba(4, 35, 212, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 60%, rgba(91, 28, 212, 0.4) 0%, transparent 55%);
+  background-repeat: no-repeat;
+  animation: floatNebula1 40s ease-in-out infinite alternate;
+}
+
+.animated-universe-background::after {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  z-index: 2; /* Acima da primeira nebulosa, mas abaixo do .page-content */
+  background-image:
+    radial-gradient(ellipse at 65% 25%, #0A0A0A 0%, transparent 50%),
+    radial-gradient(ellipse at 35% 75%, #111017 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 50%, #1F1A1E 0%, transparent 70%);
+  background-repeat: no-repeat;
+  animation: floatNebula2 55s ease-in-out infinite alternate-reverse;
+}
+
+/* ANIMAÇÕES (Keyframes - permanecem os mesmos) */
+@keyframes moveStars {
+  0% {
+    /* Ajuste os offsets iniciais para corresponder aos novos background-size, se necessário */
+    background-position: 0 0, 70px 70px, 0 0, 170px 170px;
+  }
+  100% {
+    background-position: -10000px 5000px, -9930px 5070px, -10000px 5000px, -9830px 5170px;
+  }
+}
+
+@keyframes floatNebula1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(15px, 25px) rotate(5deg) scale(1.08);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(-10px, -20px) rotate(-3deg) scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+@keyframes floatNebula2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(-20px, -10px) rotate(-4deg) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(10px, 5px) rotate(2deg) scale(0.97);
+    opacity: 0.55;
+  }
+}
+

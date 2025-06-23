@@ -15,8 +15,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primaryblue: '#A35DDA',
-        OneGray: '#291F31',
+        primaryblue: '#CDCDCD',
+        OneGray: '#212326',
         TwoGray: '#1B1E23',
         MainWhite: '#EDEDED',
         Cardcolor: '#16181C',
