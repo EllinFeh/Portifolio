@@ -28,7 +28,7 @@ const experiencesData = [
         id: 3,
         href: null, // Sem link para a conquista
         iconType: 'svg',
-        iconSrc: null, // O SVG será um componente
+        iconSrc: '', 
         title: "Demoweek",
         subtitle: "Campeão - 1º Lugar",
         description: "Capitão do campeonato de carro seguidor de linha usando C++ e hardware Arduino. Docentes: David Cavalcanti & Ramon Motta.",
