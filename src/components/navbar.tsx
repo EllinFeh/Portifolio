@@ -1,0 +1,4 @@
+"use client";
+import { useState } from "react";
+const links = [{ href: "#work", label: "Trabalhos" }, { href: "#experience", label: "Experiência" }, { href: "#stack", label: "Stack" }, { href: "#about", label: "Sobre" }];
+export function Navbar() { const [open, setOpen] = useState(false); return <header className="nav-wrap"><nav className="nav shell"><a className="brand" href="#top" aria-label="Página inicial de Elison Felipe"><span className="brand-mark">EF.</span><span className="brand-name">Elison Felipe</span></a><button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Alternar navegação">{open ? "×" : "≡"}</button><div className={`nav-links ${open ? "is-open" : ""}`}>{links.map((link) => <a onClick={() => setOpen(false)} key={link.href} href={link.href}>{link.label}</a>)}<a className="nav-contact" href="#contact">Contato ↗</a></div></nav></header>; }

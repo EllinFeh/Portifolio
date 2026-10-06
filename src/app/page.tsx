@@ -1,167 +1,31 @@
-"use client"
-import 'animate.css';
-import Button from './button';
-import Image from 'next/image';
-import { useState } from 'react';
-import My3dItem from '@/components/MySpline';
-import Footer from '@/components/Footer';
-import SvgSkill from '@/components/SvgSkill';
-import Navbar from '@/components/Navbar';
-import About from '@/components/About';
-import Certification from '@/components/Certifications';
-import Jobs from '@/components/Jobs';
+import type { Metadata } from "next";
+import { AgentPlayground } from "@/components/agent-playground";
+import { Navbar } from "@/components/navbar";
+import { ExperienceDuration } from "@/components/experience-duration";
+import { portfolio } from "@/content/portfolio";
 
-
-export default function AllPage() {
-
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
-  }
-
-  return (
-    //A main pega todo o conteudo da página, e serve apenas para animação geral de aparição
-    <main className='select-none w-full'>
-
-      <Navbar></Navbar>
-
-      {/*Organizador para conteudos centralizarem*/}
-      <div className='flex justify-between items-center'>
-
-        <div className='mt-32 w-full'>
-          <div className='Content-ONE flex items-center justify-evenly max-sm:flex max-sm:flex-col'>
-
-            <div>
-              <p className='text-2xl max-md:text-sm tracking-widest '>
-                <span className='text-red-400'>print</span>
-                <span className='text-yellow-300'>(</span><span className='text-purple-400'>"Hello world!"</span><span className='text-yellow-300'>)</span></p>
-              <p className='text-primaryblue font-bold text-5xl max-md:text-4xl'> Elison <span className='font-thin'>Felipe</span> </p>
-              <p className='text-MainWhite text-lg mt-6 font-bold'>FullStack Developer </p>
-              <p className='text-MainWhite text-md max-sm:text-xs font-extralight'>Graduando <span className='font-semibold'>Análise e Desenvolvimento Sistemas</span> </p>
-            </div>
-
-            <div>
-              <My3dItem></My3dItem>
-            </div>
-
-          </div>
-
-          <section id='about'></section>
-          {/*Sobre mim e Objetivos*/}
-          <About></About>
-
-          <section id='technologies'></section>
-          {/*Tecnologias*/}
-          <div className='Tecnologias animate__animated animate__zoomInDown'>
-            <p className='text-MainWhite text-3xl font-bold mt-40 mb-12 flex justify-center items-center text-center' >Tecnologias usadas por mim</p>
-
-            <div className='max-sm:flex max-sm:gap-12 md:flex-col justify-center items-center'>
-              <SvgSkill></SvgSkill>
-            </div>
-
-            <p className='text-primaryblue text-2xl font-bold mt-8 mb-40 flex justify-center items-center text-center' >Entre outras...</p>
-
-
-          </div>
-
-          <Certification />
-
-
-
-          <Jobs />
-
-
-          {/*Contato*/}
-          <section id='contact'></section>
-          <p className='text-MainWhite text-3xl font-bold pt-40 mb-20 text-center'>Contato</p>
-          <div className='flex justify-center items-center'>
-
-            <div className='mb-40 flex max-lg:flex-col justify-center items-center border-primaryblue border-2 border-solid rounded-3xl p-2'>
-
-              <div className='flex'>
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://github.com/ellinfeh" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M65.1643 128.417L21.0329 51.9792C17.5688 45.9792 21.8989 38.4792 28.8272 38.4792L117.09 38.4792C124.018 38.4792 128.348 45.9792 124.884 51.9792L80.7528 128.417C77.2887 134.417 68.6284 134.417 65.1643 128.417Z" stroke="#CDCDCD" stroke-width="4" />
-                      <path d="M55.8388 52.6375C55.9708 50.3013 56.5289 49.2854 58.1292 48.4696C59.8511 47.5916 62.5669 48.0002 65.7625 49.6185C67.139 50.3158 67.2791 50.33 69.6914 50.0207C72.8977 49.6095 77.0256 49.6109 79.9849 50.0245C82.2229 50.3372 82.3699 50.3216 83.7497 49.6228C88.2857 47.3258 91.867 47.4761 93.1637 50.0178C93.811 51.2865 93.9312 54.5786 93.4293 57.2938C93.151 58.7991 93.1805 58.9871 93.8509 59.9749C98.5675 66.9254 95.169 78.1918 87.0869 82.3962C86.4684 82.7181 85.9473 82.9172 85.5225 83.0793C84.2182 83.5774 83.8222 83.7286 84.3017 86.021C84.5325 87.1237 84.8106 89.8651 84.9199 92.1135C85.1174 96.1776 85.1145 96.206 84.4017 97.0351C83.4315 98.1629 82.0331 98.182 81.0856 97.0802C80.4676 96.3618 80.4072 96.0225 80.4072 93.2504C80.4072 89.1539 79.9582 86.4311 78.8973 84.0979C77.6356 81.3213 78.5709 80.286 81.4561 79.6655C85.4665 78.8027 88.5987 76.3278 90.3445 72.6422C92.0044 69.1387 92.2545 64.2972 89.2536 61.3528C88.4002 60.3386 88.3408 59.42 88.9502 56.6501C89.1779 55.6148 89.3689 54.2792 89.3745 53.6817C89.3831 52.7382 89.2972 52.5958 88.7177 52.5958C88.351 52.5958 86.9499 53.1292 85.6046 53.7811L83.4573 54.8218C83.2621 54.9164 83.0437 54.9528 82.8282 54.9281C77.3682 54.3013 72.1802 54.2917 66.6935 54.9305C66.4772 54.9557 66.2578 54.9193 66.0619 54.8242L63.9158 53.7828C62.5704 53.1298 61.1693 52.5958 60.8027 52.5958C59.9551 52.5958 59.9423 53.2216 60.7149 56.9396C61.1869 59.2104 61.5045 59.7163 60.1401 61.532C58.095 64.2536 57.5842 67.6331 58.6809 71.1839C60.0631 75.6585 63.4478 78.6814 68.2064 79.69C71.075 80.298 71.8248 81.0913 70.7294 84.3807C69.8671 86.9692 69.3219 87.6365 68.0688 87.6365C66.3828 87.6365 65.3267 86.1759 65.9079 84.6476C66.1639 83.974 66.0878 83.9021 64.5083 83.3261C59.6869 81.5682 55.9992 77.6282 54.3132 72.4329C53.01 68.4176 53.5834 63.1914 55.674 60.0325C56.3858 58.9569 56.3968 58.8657 56.0647 56.8067C55.8767 55.6411 55.7751 53.7651 55.8388 52.6375Z" fill="#CDCDCD" />
-                      <path d="M54.1551 82.0111C53.4604 80.969 52.0523 80.6873 51.0101 81.3822C49.968 82.0768 49.6864 83.485 50.3811 84.5271C50.8941 85.2966 51.5077 85.9286 52.0288 86.4496C52.1249 86.5457 52.2182 86.6385 52.3093 86.729C52.7458 87.1626 53.1313 87.5454 53.5183 87.9999C54.3745 89.0048 55.2286 90.3583 55.714 92.7854C55.9303 93.8665 56.7074 94.4489 57.1379 94.7034C57.6049 94.9792 58.1151 95.1418 58.535 95.2477C59.3939 95.4643 60.4365 95.5768 61.426 95.6423C62.5122 95.7144 63.6892 95.7378 64.7416 95.7441C64.7424 96.9958 65.7575 98.0105 67.0095 98.0105C68.2621 98.0105 69.2774 96.9951 69.2774 95.7426V93.4746C69.2774 92.2221 68.2621 91.2067 67.0095 91.2067C66.7957 91.2067 66.5644 91.2074 66.3194 91.2083C64.9885 91.2124 63.2536 91.2176 61.7258 91.1165C60.989 91.0677 60.3833 90.9985 59.9392 90.914C59.2552 88.229 58.1503 86.4426 56.9712 85.0585C56.45 84.4468 55.9103 83.9116 55.4713 83.4761C55.3891 83.3947 55.3104 83.3167 55.2361 83.2423C54.7295 82.7359 54.3982 82.3757 54.1551 82.0111Z" fill="#CDCDCD" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://www.instagram.com/sant.ell/" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M80.7528 17.5L124.884 93.9378C128.348 99.9378 124.018 107.438 117.09 107.438H28.8271C21.8989 107.438 17.5688 99.9378 21.0329 93.9378L65.1643 17.5C68.6284 11.5 77.2887 11.5 80.7528 17.5Z" stroke="#CDCDCD" stroke-width="4" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M72.9585 84.8744C79.5396 84.8744 84.8747 79.5393 84.8747 72.9582C84.8747 66.377 79.5396 61.042 72.9585 61.042C66.3774 61.042 61.0423 66.377 61.0423 72.9582C61.0423 79.5393 66.3774 84.8744 72.9585 84.8744ZM72.9585 80.9023C77.3459 80.9023 80.9027 77.3455 80.9027 72.9582C80.9027 68.5708 77.3459 65.0141 72.9585 65.0141C68.5711 65.0141 65.0144 68.5708 65.0144 72.9582C65.0144 77.3455 68.5711 80.9023 72.9585 80.9023Z" fill="#CDCDCD" />
-                      <path d="M84.8747 59.0557C83.7778 59.0557 82.8887 59.9448 82.8887 61.0417C82.8887 62.1385 83.7778 63.0277 84.8747 63.0277C85.9716 63.0277 86.8607 62.1385 86.8607 61.0417C86.8607 59.9448 85.9716 59.0557 84.8747 59.0557Z" fill="#CDCDCD" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.411 57.6177C51.1122 60.1667 51.1122 63.5035 51.1122 70.1772V75.7381C51.1122 82.4118 51.1122 85.7487 52.411 88.2976C53.5534 90.5398 55.3764 92.3628 57.6185 93.5051C60.1676 94.804 63.5044 94.804 70.1781 94.804H75.739C82.4126 94.804 85.7496 94.804 88.2984 93.5051C90.5407 92.3628 92.3636 90.5398 93.506 88.2976C94.8049 85.7487 94.8049 82.4118 94.8049 75.7381V70.1772C94.8049 63.5035 94.8049 60.1667 93.506 57.6177C92.3636 55.3755 90.5407 53.5526 88.2984 52.4101C85.7496 51.1113 82.4126 51.1113 75.739 51.1113H70.1781C63.5044 51.1113 60.1676 51.1113 57.6185 52.4101C55.3764 53.5526 53.5534 55.3755 52.411 57.6177ZM75.739 55.0834H70.1781C66.7757 55.0834 64.4628 55.0865 62.675 55.2325C60.9336 55.3748 60.043 55.6327 59.4218 55.9492C57.927 56.7109 56.7117 57.9262 55.9501 59.421C55.6336 60.0422 55.3757 60.9327 55.2334 62.6742C55.0873 64.4619 55.0842 66.7748 55.0842 70.1772V75.7381C55.0842 79.1406 55.0873 81.4533 55.2334 83.2411C55.3757 84.9827 55.6336 85.8732 55.9501 86.4945C56.7117 87.9891 57.927 89.2044 59.4218 89.966C60.043 90.2826 60.9336 90.5406 62.675 90.6828C64.4628 90.8288 66.7757 90.8319 70.1781 90.8319H75.739C79.1414 90.8319 81.4542 90.8288 83.242 90.6828C84.9835 90.5406 85.8741 90.2826 86.4953 89.966C87.99 89.2044 89.2052 87.9891 89.9669 86.4945C90.2835 85.8732 90.5415 84.9827 90.6837 83.2411C90.8296 81.4533 90.8328 79.1406 90.8328 75.7381V70.1772C90.8328 66.7748 90.8296 64.4619 90.6837 62.6742C90.5415 60.9327 90.2835 60.0422 89.9669 59.421C89.2052 57.9262 87.99 56.7109 86.4953 55.9492C85.8741 55.6327 84.9835 55.3748 83.242 55.2325C81.4542 55.0865 79.1414 55.0834 75.739 55.0834Z" fill="#CDCDCD" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://api.whatsapp.com/send/?phone=%2B5581987677807&text=Olá%2C+Tenho+interesse+em+seus+serviços%21&type=phone_number&app_absent=0" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M65.1643 128.417L21.0329 51.9792C17.5688 45.9792 21.8989 38.4792 28.8271 38.4792L117.09 38.4792C124.018 38.4792 128.348 45.9792 124.884 51.9792L80.7527 128.417C77.2886 134.417 68.6284 134.417 65.1643 128.417Z" stroke="#CDCDCD" stroke-width="4" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M57.554 68.012C57.554 58.9819 64.85 51.6616 73.85 51.6616C82.8501 51.6616 90.1461 58.9819 90.1461 68.012C90.1461 77.042 82.8501 84.3623 73.85 84.3623C70.6441 84.3623 67.66 83.4356 65.1421 81.835C64.6736 81.5372 64.0994 81.4576 63.5679 81.6166L58.048 83.2696L60.1263 78.3902C60.372 77.8135 60.322 77.153 59.9924 76.6202C58.4468 74.1212 57.554 71.1741 57.554 68.012ZM73.85 47.8145C62.7323 47.8145 53.7196 56.8572 53.7196 68.012C53.7196 71.5477 54.6267 74.8759 56.2208 77.7697L52.9153 85.5299C52.623 86.2161 52.7526 87.0098 53.2476 87.5664C53.7426 88.1233 54.5139 88.3426 55.2265 88.1291L63.8527 85.5463C66.7995 87.241 70.2145 88.2095 73.85 88.2095C84.9678 88.2095 93.9805 79.1668 93.9805 68.012C93.9805 56.8572 84.9678 47.8145 73.85 47.8145ZM78.2452 72.21L75.7256 73.9906C74.5456 73.3162 73.241 72.3748 71.9323 71.0618C70.5718 69.6968 69.5633 68.2876 68.8196 66.995L70.4208 65.6314C71.1079 65.0462 71.296 64.0597 70.8726 63.2613L68.8325 59.4141C68.5577 58.8961 68.0624 58.5322 67.4872 58.4259C66.912 58.3196 66.3199 58.4826 65.8793 58.8684L65.2744 59.3981C63.8198 60.6719 62.9595 62.765 63.6725 64.8844C64.4117 67.0815 65.9893 70.5395 69.221 73.7821C72.698 77.2707 76.2298 78.6445 78.2952 79.1781C79.9593 79.6078 81.5341 79.0317 82.6438 78.1246L83.7778 77.1974C84.2629 76.801 84.5246 76.1918 84.4789 75.5656C84.4331 74.9395 84.0857 74.3751 83.5481 74.0537L80.3305 72.1301C79.6806 71.7418 78.8639 71.7729 78.2452 72.21Z" fill="#CDCDCD" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://www.linkedin.com/in/elison-felipe-72a6a7261/" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M93.1512 94.5413H85.402V80.9819C85.402 77.2623 83.761 75.187 80.8183 75.187C77.6159 75.187 75.7154 77.3495 75.7154 80.9819V94.5413H67.9661V69.3561H75.7154V72.1883C75.7154 72.1883 78.1467 67.9221 83.6254 67.9221C89.1061 67.9221 93.1512 71.2665 93.1512 78.1866V94.5413ZM59.1358 65.3283C56.5224 65.3283 54.4049 63.1935 54.4049 60.5606C54.4049 57.9298 56.5224 55.7949 59.1358 55.7949C61.7473 55.7949 63.8648 57.9298 63.8648 60.5606C63.8667 63.1935 61.7473 65.3283 59.1358 65.3283ZM54.4049 94.5413H64.0915V69.3561H54.4049V94.5413Z" fill="#CDCDCD" />
-                      <path d="M80.7528 17.5L124.884 93.9378C128.348 99.9378 124.018 107.438 117.09 107.438H28.8271C21.8989 107.438 17.5688 99.9378 21.0329 93.9378L65.1643 17.5C68.6284 11.5 77.2887 11.5 80.7528 17.5Z" stroke="#CDCDCD" stroke-width="4" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-
-              <div className='flex'>
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://www.figma.com/@ellin1" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M65.1643 128.417L21.0329 51.9792C17.5688 45.9792 21.8989 38.4792 28.8271 38.4792L117.09 38.4792C124.018 38.4792 128.348 45.9792 124.884 51.9792L80.7527 128.417C77.2886 134.417 68.6284 134.417 65.1643 128.417Z" stroke="#CDCDCD" stroke-width="4" />
-                      <path d="M72.3976 53H65.6476C61.9196 53 58.8976 55.9848 58.8976 59.6667C58.8976 63.3486 61.9196 66.3333 65.6476 66.3333M72.3976 53V66.3333M72.3976 53H79.1476C82.8756 53 85.8976 55.9848 85.8976 59.6667C85.8976 63.3486 82.8756 66.3333 79.1476 66.3333M65.6476 66.3333H72.3976M65.6476 66.3333C61.9196 66.3333 58.8976 69.318 58.8976 73C58.8976 76.682 61.9196 79.6667 65.6476 79.6667M72.3976 66.3333H79.1476M72.3976 66.3333V79.6667M79.1476 66.3333C82.8756 66.3333 85.8976 69.318 85.8976 73C85.8976 76.682 82.8756 79.6667 79.1476 79.6667C75.4195 79.6667 72.3976 76.682 72.3976 73C72.3976 69.318 75.4195 66.3333 79.1476 66.3333ZM72.3976 79.6667H65.6476M72.3976 79.6667V86.3333C72.3976 90.0153 69.3756 93 65.6476 93C61.9196 93 58.8976 90.0153 58.8976 86.3333C58.8976 82.6513 61.9196 79.6667 65.6476 79.6667" stroke="#CDCDCD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://elisonsantos.netlify.app">
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M79.5077 90.3835C80.5746 88.7385 81.6438 86.6235 82.4123 83.9092C84.1865 84.5907 85.4038 85.4038 86.1511 86.0454C84.2368 87.9469 81.9436 89.4241 79.4207 90.3811H79.5077V90.3835ZM58.8277 86.0242C59.6173 85.3827 60.8134 84.5907 62.5877 83.8857C63.3773 86.6211 64.4042 88.7361 65.4923 90.3811C63.0068 89.4035 60.7516 87.9198 58.87 86.0242H58.8277ZM83.8223 70.3638C83.7565 68.4603 83.5638 66.5592 83.2465 64.6816C85.5965 63.8262 87.305 62.8015 88.5011 61.8615C90.1691 64.4148 91.2021 67.33 91.5138 70.3638H83.8223ZM62.7357 60.4938C61.4922 60.0357 60.3203 59.4027 59.2554 58.6138C61.0565 56.8914 63.1746 55.5347 65.4923 54.6188C64.4888 56.1134 63.5065 58.0357 62.7146 60.4938H62.7381H62.7357ZM79.5077 54.6188C81.8269 55.5317 83.9456 56.8888 85.7446 58.6138C84.6784 59.4007 83.5068 60.0336 82.2643 60.4938C81.6274 58.4115 80.6917 56.4325 79.4865 54.6188H79.5077ZM79.08 65.7273C79.2915 67.1373 79.5077 68.6554 79.55 70.3638H65.45C65.5134 68.6554 65.6615 67.1161 65.8777 65.7273C70.2369 66.5122 74.6996 66.5122 79.0588 65.7273H79.08ZM72.5 62.0307C70.3615 62.0307 68.4815 61.8615 66.8835 61.6054C68.5896 56.3484 71.2404 54.2334 72.5 53.4861C73.7173 54.2334 76.3892 56.3696 78.0977 61.6054C76.246 61.8954 74.3742 62.0376 72.5 62.0307ZM56.4777 61.8615C58.0752 63.0761 59.8561 64.028 61.7534 64.6816C61.4363 66.5609 61.244 68.4591 61.1777 70.3638H53.3992C53.7366 67.3224 54.7996 64.4065 56.4988 61.8615H56.4777ZM53.4227 74.6361H61.1777C61.2623 76.4738 61.3892 78.1611 61.6477 79.7004C59.6794 80.3764 57.8429 81.3877 56.2192 82.6896C54.6826 80.2528 53.7184 77.4993 53.3992 74.6361H53.4227ZM72.5 78.0554C69.9385 78.0554 67.7365 78.2669 65.8142 78.61C65.6264 77.2931 65.5049 75.9676 65.45 74.6385H79.55C79.4865 76.0673 79.3784 77.4115 79.2092 78.61C76.9956 78.2098 74.7495 78.0171 72.5 78.0342V78.0554ZM72.5 91.5138C71.2192 90.7454 68.3993 88.4588 66.6885 82.7554C68.6093 82.4424 70.554 82.2993 72.5 82.3277C74.7442 82.3277 76.6665 82.4757 78.3327 82.7554C76.6242 88.5223 73.8042 90.7454 72.5211 91.5138H72.5ZM88.7784 82.6684C87.1568 81.3649 85.3207 80.3535 83.3523 79.6792C83.6098 78.0091 83.7668 76.3251 83.8223 74.6361H91.6008C91.2784 77.492 90.312 80.2379 88.7784 82.6684ZM72.5 49C59.521 49 49 59.521 49 72.5C49 85.479 59.521 96 72.5 96C85.479 96 96 85.479 96 72.5C96 59.521 85.479 49 72.5 49Z" fill="#CDCDCD" />
-                      <path d="M80.7528 17.5L124.884 93.9378C128.348 99.9378 124.018 107.438 117.09 107.438H28.8271C21.8989 107.438 17.5688 99.9378 21.0329 93.9378L65.1643 17.5C68.6284 11.5 77.2887 11.5 80.7528 17.5Z" stroke="#CDCDCD" stroke-width="4" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className='hover:scale-105 cursor-pointer'>
-                  <a href="https://is.gd/wx8RsQ" target='_blank'>
-                    <svg width="70" height="70" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M65.1643 128.417L21.0329 51.9792C17.5688 45.9792 21.8989 38.4792 28.8271 38.4792L117.09 38.4792C124.018 38.4792 128.348 45.9792 124.884 51.9792L80.7527 128.417C77.2886 134.417 68.6284 134.417 65.1643 128.417Z" stroke="#CDCDCD" stroke-width="4" />
-                      <path d="M55.2222 56.4444L69 66.7777C71.3705 68.5554 74.6296 68.5554 77 66.7777L90.7778 56.4443" stroke="#CDCDCD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M88.5556 52H57.4444C54.9898 52 53 53.9898 53 56.4444V78.6667C53 81.1213 54.9898 83.1111 57.4444 83.1111H88.5556C91.0102 83.1111 93 81.1213 93 78.6667V56.4444C93 53.9898 91.0102 52 88.5556 52Z" stroke="#CDCDCD" stroke-width="5" stroke-linecap="round" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <Footer></Footer>
-
-    </main >
-  );
+export const metadata: Metadata = { title: "Elison Felipe — Desenvolvedor Full Stack", description: "Desenvolvedor Full Stack especializado em sistemas com IA, automação e arquitetura de software escalável." };
+const Arrow = () => <span aria-hidden="true">↗</span>;
+export default function Home() {
+  const { projects, skills, experiences, principles, contacts } = portfolio;
+  return <main>
+    <Navbar />
+    <section className="hero shell" id="top"><div className="hero-grid"><div><h1>Software inteligente,<br /><em>feito para funcionar.</em></h1><p className="hero-copy">Desenvolvo produtos com IA que conectam interfaces claras, APIs confiáveis, agentes especializados e fluxos operacionais reais.</p><div className="hero-actions"><a className="button button-primary" href="#work">Conheça o trabalho <Arrow /></a><a className="button button-quiet" href="#contact">Vamos conversar</a></div><div className="hero-meta"><span>Recife, Brasil</span><span>Construindo software há <ExperienceDuration short /></span></div></div><div className="hero-console" aria-label="Resumo do perfil profissional"><div className="console-bar"><span /><span /><span /><p>perfil.profissional</p></div><pre><code>{`const desenvolvedor = {
+  atuação: "Full Stack",
+  foco: "sistemas com IA",
+  desenvolve: ["aplicações com LLM",
+    "fluxos de agentes", "automação"],
+  status: "em produção"
+}`}</code></pre><div className="console-status"><span className="live-dot" /> engenharia orientada à produção</div></div></div></section>
+    <section className="metrics shell" aria-label="Métricas selecionadas">{portfolio.metrics.map((item) => <div className="metric" key={item.label}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section>
+    <section className="section shell intro" id="about"><div className="section-label">01 / SOBRE</div><div><h2>Do problema à produção, pensando no sistema completo.</h2><p>Atuo na interseção entre produto, engenharia de software e inteligência artificial. O foco não é uma funcionalidade isolada: é um sistema sustentável, com interfaces úteis, arquitetura intencional, validação e espaço para evoluir.</p></div></section>
+    <section className="section shell" id="work"><div className="section-heading"><div><div className="section-label">02 / TRABALHOS SELECIONADOS</div><h2>Sistemas com impacto operacional real.</h2></div><p>Os projetos são apresentados no nível arquitetural para preservar informações proprietárias.</p></div><article className="flagship-card"><div className="flagship-copy"><span className="tag">CASE PRINCIPAL / IA CORPORATIVA</span><h3>Ecossistema Inteligente de Operações</h3><p>Um ecossistema completo de capacidades de IA especializadas para fluxos que exigem alto volume de documentos e contexto. Arquitetura e desenvolvimento conduzidos individualmente, da interface à orquestração dos agentes.</p><ul><li>Agentes especializados com camadas determinísticas de validação</li><li>Inteligência documental, transcrição, geração de relatórios, classificação e cálculos</li><li>Dashboards de usabilidade, painel administrativo e integrações entre fluxos</li></ul></div><div className="architecture architecture-flow" aria-label="Diagrama da arquitetura do ecossistema de IA"><div className="architecture-core">ECOSSISTEMA<br />DE IAs</div><div className="architecture-bus" aria-hidden="true" /> <div className="architecture-modules">{["IA Documental", "Transcrição", "Geração de relatórios", "Dashboards de usabilidade", "Painel administrativo", "Agentes jurídicos", "Automação", "Busca e contexto", "Validação"].map((item) => <div className="architecture-node" key={item}>{item}</div>)}</div></div></article><div className="project-grid">{projects.slice(1).map((project) => <article className="project-card" key={project.title}><div><span className="tag">{project.kind}</span><h3>{project.title}</h3><p>{project.description}</p></div><div className="project-stack">{project.stack.map((item) => <span key={item}>{item}</span>)}</div></article>)}</div></section>
+    <section className="section shell ecosystem"><div className="section-heading"><div><div className="section-label">03 / PLAYGROUND DE AGENTES</div><h2>Uma visão controlada do fluxo.</h2></div><p>Demonstração sintética — sem modelo real, dados de clientes ou informações confidenciais.</p></div><AgentPlayground /></section>
+    <section className="section shell" id="experience"><div className="section-heading"><div><div className="section-label">04 / EXPERIÊNCIA</div><h2>Uma progressão construída na mesma organização.</h2></div><p><ExperienceDuration /> de experiência profissional em tecnologia, calculada a partir de julho de 2024.</p></div><ol className="timeline">{experiences.map((experience) => <li key={experience.role}><div className="timeline-marker" /><div className="timeline-period">{experience.period}</div><div><h3>{experience.role}</h3><p className="company">Queiroz Cavalcanti Advocacia <span>·</span> Recife, Brasil <span>·</span> Híbrido</p><p>{experience.description}</p></div></li>)}</ol></section>
+    <section className="section shell" id="stack"><div className="section-heading"><div><div className="section-label">05 / CAPACIDADES</div><h2>Profundidade em toda a superfície do produto.</h2></div><p>Tecnologias organizadas pelos sistemas que ajudam a construir — não uma parede de logos.</p></div><div className="skill-grid">{skills.map((group) => <article className="skill-card" key={group.name}><h3>{group.name}</h3><div>{group.items.map((item) => <span key={item}>{item}</span>)}</div></article>)}</div></section>
+    <section className="section shell principles"><div className="section-label">06 / PRINCÍPIOS DE ENGENHARIA</div><div>{principles.map((item, index) => <article key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div></section>
+    <section className="section shell education"><div><div className="section-label">07 / FORMAÇÃO</div><h2>Aprendizado conectado ao trabalho real.</h2></div><div className="education-list"><article><span>Ensino superior</span><h3>Análise e Desenvolvimento de Sistemas</h3><p>Instituto Federal de Pernambuco — IFPE</p></article><article><span>Formação técnica</span><h3>Redes de Computadores</h3></article><article><span>Aprendizado contínuo</span><h3>20+ certificações em tecnologia</h3><p>Engenharia de IA · Backend · Frontend · DevOps · Cloud · Automação</p></article></div></section>
+    <section className="contact shell" id="contact"><div className="section-label">08 / CONTATO</div><h2>Tem um problema que vale a pena resolver?</h2><p>Vamos conversar sobre o sistema por trás dele.</p><div className="contact-links"><a className="button button-primary" href={`mailto:${contacts.email}`}>Enviar e-mail <Arrow /></a><a href={contacts.github} target="_blank" rel="noreferrer">GitHub <Arrow /></a><a href={contacts.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a></div></section>
+    <footer className="shell"><span>Design e desenvolvimento por Elison Felipe</span><span>© {new Date().getFullYear()} · Next.js + TypeScript</span></footer>
+  </main>;
 }
